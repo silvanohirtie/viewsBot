@@ -1,9 +1,4 @@
-https://1google.com?aff_l
-https://2google.com?aff_l
-https://3google.com?aff_l
-https://4google.com?aff_l
-https://5google.com?aff_l
-https://6google.com?aff_l
-https://7google.com?aff_l
-https://8google.com?aff_l
-https://9google.com?aff_l
+https://google.com/
+https://facebook.com/
+https://twitter.com/
+https://instagram.com/
