@@ -11,7 +11,7 @@ import time
 botCount = 0
 counter = 0
 chooseAgent = ""
-current_path = current_path
+current_path = os.path.dirname(os.path.realpath(__file__))
 
 url = input("URL to visit: ")
 agents = ["user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
@@ -34,13 +34,13 @@ while True: #Loop
     
     if(agentPrint == "Random"):
         chooseAgent = random.choice(agents) #Take random choice from the agents array
-    print(chooseAgent)
-    print("Url: ",url)
     botCount +=1
     print("Bot N.",botCount)
+    print("Url: ",url)
     lines = open(current_path+'/proxies.txt').read().splitlines() #Open the proxies.txt file and read all the lines
     chooseProxy = random.choice(lines) #Choose a random line
     print("Proxy: ",chooseProxy)
+    print(chooseAgent)
 
     #Options
     opts = Options()
@@ -60,5 +60,5 @@ while True: #Loop
     driver.delete_all_cookies() #Clean the cookies
     print("Cookie cleaned, exiting..\n")
     driver.quit() #exit
-    if counter > maxloop:
+    if int(counter) > int(maxloop):
         break #After 100 attemps, stop the code
