@@ -9,7 +9,7 @@ import os
 import time
 
 botCount = 0
-counter = 0
+counter = 1
 chooseAgent = ""
 current_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -35,7 +35,8 @@ while True: #Loop
     if(agentPrint == "Random"):
         chooseAgent = random.choice(agents) #Take random choice from the agents array
     botCount +=1
-    print("Bot N.",botCount)
+    print(u"\u001b[34;1mBot N.",botCount, "\u001b[0m")
+    print("Views: ",int(counter),"/",int(maxloop))
     print("Url: ",url)
     lines = open(current_path+'/proxies.txt').read().splitlines() #Open the proxies.txt file and read all the lines
     chooseProxy = random.choice(lines) #Choose a random line
@@ -54,11 +55,15 @@ while True: #Loop
         driver.get(url) #Fire the url
         time.sleep(2) #Wait 2 seconds
     except TimeoutException as ex:
-        print("Proxy is taking too much time...")
+        print(u"\u001b[31mProxy is taking too much time... Skipping\u001b[0m")
+        counter-=1
         
     print("\nCleaning Cookies")
     driver.delete_all_cookies() #Clean the cookies
     print("Cookie cleaned, exiting..\n")
     driver.quit() #exit
+    counter+=1
     if int(counter) > int(maxloop):
-        break #After 100 attemps, stop the code
+        print("Finished!")
+        break
+        
