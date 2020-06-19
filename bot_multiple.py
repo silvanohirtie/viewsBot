@@ -5,6 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import TimeoutException
+from userAgents import agents
 import random
 from random import randrange
 import os
@@ -25,15 +26,6 @@ path.write_text(text)
 
 botCount = 0
 chooseAgent = ""
-
-agents = ["user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
-          "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36",
-          "user-agent=Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-en) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4",
-          "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko)",
-          "user-agent=Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19",
-          "user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
-]
-
 agentPrint = input("What Agent do you want to use? [iPhone, Android, Random]: ")
 if(agentPrint == "Android"):
     chooseAgent = "user-agent=Mozilla/5.0 (Linux; Android 4.0.4; Galaxy Nexus Build/IMM76B) AppleWebKit/535.19"
@@ -67,8 +59,10 @@ while True: #Loop
         time.sleep(2) #Wait 2 seconds
     except TimeoutException as ex:
         print("Proxy is taking too much time...")
+    else:
+        print(u"\u001b[32;1mDone!\u001b[0m")
         
-    print("\nCleaning Cookies")
+    print("Cleaning Cookies")
     driver.delete_all_cookies() #Clean the cookies
     print("Cookie cleaned, exiting..\n")
     driver.quit() #exit
