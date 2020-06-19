@@ -22,7 +22,10 @@
     <img src="https://img.shields.io/github/stars/silvanohirtie/viewsBot"
       alt="Stars" />
   </a>
-
+  <a href="https://github.com/silvanohirtie/viewsBot/LICENSE">
+    <img src="https://img.shields.io/github/license/silvanohirtie/viewsBot"
+      alt="License" />
+  </a>
 </div>
 <div align="center">
   <sub>Built with ❤︎ by
