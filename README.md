@@ -73,11 +73,8 @@ Fill the proxies.txt file with some good proxies and links.txt with the link you
 Then it will start the process and tell you everything he's doing.
 
 ## Screenshots
-# First bot  
-<img src="https://i.imgur.com/N0gS5eE.png"></img>  
-
-# Second bot  
-<img src="https://i.imgur.com/2FHCJ6U.png"></img>
+<img src="https://i.imgur.com/tOr8deA.png"></img>  
+<img src="https://i.imgur.com/dbokQtn.png"></img>
 
 ## Support
 - Discord: Silvano#8106
