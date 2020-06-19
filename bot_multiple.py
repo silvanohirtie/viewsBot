@@ -24,7 +24,6 @@ path.write_text(text)
 
 
 botCount = 0
-counter = 0
 chooseAgent = ""
 
 agents = ["user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
@@ -74,5 +73,6 @@ while True: #Loop
     print("Cookie cleaned, exiting..\n")
     driver.quit() #exit
     to_use+=1
-    if int(counter) > int(strlinks_n):
-        break 
+    if int(counter) > int(maxloop):
+        print("Finished!")
+        break
