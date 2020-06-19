@@ -57,7 +57,7 @@ Second bot:
 - After each view, the bot clear the cookies
 
 ## Setup
-**First bot: **  
+**First bot:**  
 Fill the proxies.txt file with some good proxies, then run the bot.py file, it will immediately ask you:
 - The url you want to visit
 - How many times you want to visit it
