@@ -48,6 +48,7 @@ First bot:
 - User can choose how many visits the page needs
 - Bot tells you what proxy and user-agent he's using each time
 - Bot skips to next proxy and user-agent if the proxy is taking too much time for loading
+- Skipped proxies do not count as "view"
 - After each view, the bot clear the cookies
 
 Second bot:  
