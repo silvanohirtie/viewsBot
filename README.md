@@ -18,16 +18,11 @@
     <img src="https://img.shields.io/github/forks/silvanohirtie/viewsBot"
       alt="forks" />
   </a>
-  <!-- Build Status -->
   <a href="https://img.shields.io/github/stars/silvanohirtie/viewsBot">
     <img src="https://img.shields.io/github/stars/silvanohirtie/viewsBot"
       alt="Stars" />
   </a>
-  <!-- Test Coverage -->
-  <a href="https://github.com/silvanohirtie/viewsBot/LICENSE">
-    <img src="https://img.shields.io/github/license/silvanohirtie/viewsBot"
-      alt="License" />
-  </a>
+
 </div>
 <div align="center">
   <sub>Built with ❤︎ by
