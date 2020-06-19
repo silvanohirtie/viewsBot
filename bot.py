@@ -49,7 +49,7 @@ while True: #Loop
         driver.get(url) #Fire the url
         time.sleep(2) #Wait 2 seconds
     except TimeoutException as ex:
-        print(u"\u001b[31mProxy is taking too much time... Skipping\u001b[0m")
+        print(u"\u001b[31mBot is taking too much time... Skipping\u001b[0m")
         counter-=1
     else:
         print(u"\u001b[32;1mDone!\u001b[0m")
