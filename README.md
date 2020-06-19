@@ -9,32 +9,7 @@
 
 <br />
 
-<div align="center">
-  <a href="https://github.com/silvanohirtie/viewsBot/issues">
-    <img src="https://img.shields.io/github/issues/silvanohirtie/viewsBot"
-      alt="stability" />
-  </a>
-  <a href="https://img.shields.io/github/forks/silvanohirtie/viewsBot">
-    <img src="https://img.shields.io/github/forks/silvanohirtie/viewsBot"
-      alt="forks" />
-  </a>
-  <!-- Build Status -->
-  <a href="https://img.shields.io/github/stars/silvanohirtie/viewsBot">
-    <img src="https://img.shields.io/github/stars/silvanohirtie/viewsBot"
-      alt="Stars" />
-  </a>
-  <!-- Test Coverage -->
-  <a href="https://github.com/silvanohirtie/viewsBot/LICENSE">
-    <img src="https://img.shields.io/github/license/silvanohirtie/viewsBot"
-      alt="License" />
-  </a>
-</div>
-<div align="center">
-  <sub>Built with ❤︎ by
-  <a href="https://github.com/silvanohirtie/s">Silvano Hirtie</a>
-   
-  </a>
-</div>
+
 
 ## Table of Contents
 - [Features](#features)
