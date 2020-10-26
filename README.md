@@ -77,5 +77,5 @@ Then it will start the process and tell you everything he's doing.
 <img src="https://i.imgur.com/dbokQtn.png"></img>
 
 ## Support
-- Discord: Silvano#8106
+- Discord: Silvano#1337
 - Email: hirtie.silvano@gmail.com
